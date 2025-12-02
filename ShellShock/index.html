@@ -4,21 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shell Shock Surface Co. - Professional Surface Solutions</title>
-    <meta name="description" content="Professional interior/exterior painting, cabinet refinishing, and driveway seal coating in Ashville, Alabama. Your space deserves a shell-shocked makeover.">
+    <meta name="description" content="One-stop home improvement team in Ashville, AL. Painting, flooring, drywall, siding, cabinets, tile, and 20+ more services. One crew, one schedule, less hassle.">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header class="header">
         <nav class="nav">
             <div class="nav-brand">
-                <h1 class="logo">Shell Shock Surface Co.</h1>
+                <img src="images/logoNoBg.png" alt="Shell Shock Logo" class="logo-img">
+                <h1 class="logo">SHELL SHOCK SURFACE CO.</h1>
             </div>
             <div class="nav-menu">
                 <a href="#services" class="nav-link">Services</a>
-                <a href="#pricing" class="nav-link">Pricing</a>
                 <a href="#about" class="nav-link">About</a>
                 <a href="#contact" class="nav-link">Contact</a>
-
             </div>
         </nav>
     </header>
@@ -26,11 +26,18 @@
     <main>
         <section class="hero">
             <div class="hero-content">
-                <h2 class="hero-title">Your space deserves a shell-shocked makeover.</h2>
-                <p class="hero-subtitle">Professional surface solutions for businesses and commercial properties in Ashville, Alabama and surrounding areas.</p>
-                <div class="hero-buttons">
-                    <a href="#contact" class="btn btn-primary">Get Quote</a>
-                    <a href="tel:205-505-3011" class="btn btn-secondary">Call Now</a>
+                <div class="hero-text">
+                    <h2 class="hero-title">Your space deserves a shell-shocked makeover.</h2>
+                    <p class="hero-subtitle">Your one-stop home improvement team. One crew, one schedule, one point of contact. We make your project easier from start to finish.</p>
+                    <div class="hero-buttons">
+                        <a href="tel:205-505-3011" class="btn btn-primary">Get Free Quote</a>
+                    </div>
+                </div>
+                <div class="hero-social">
+                    <a href="#" class="social-link" title="Facebook" aria-label="Facebook"><i class='bx bxl-facebook'></i></a>
+                    <a href="#" class="social-link" title="Instagram" aria-label="Instagram"><i class='bx bxl-instagram'></i></a>
+                    <a href="#" class="social-link" title="Twitter" aria-label="Twitter"><i class='bx bxl-twitter'></i></a>
+                    <a href="#" class="social-link" title="YouTube" aria-label="YouTube"><i class='bx bxl-youtube'></i></a>
                 </div>
             </div>
         </section>
@@ -38,105 +45,74 @@
         <section id="services" class="services">
             <div class="container">
                 <h2 class="section-title">Our Services</h2>
-                <div class="services-grid">
-                    <div id="painting-card" class="service-card" style="background-image: url('images/Paintroller.png')">
-                        <h3>Interior & Exterior Painting</h3>
-                        <div class="service-pricing">
-                            <div class="price-highlight">Starting at $75</div>
-                            <div class="price-details">
-                                <span>Closet: $75 • Bathroom: $250 • Kitchen: $450</span>
-                            </div>
-                        </div>
-                        <p>Professional painting services with premium materials. Only $1.00/sq ft vs competitors' $2.50-$4.00.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card" id="painting-card">
+                    <h3 class="service-title">Painting & Finishing</h3>
+                    <div class="card-image">
+                        <img src="images/TurtleGreenPaintRoller.png" alt="Painting & Finishing">
                     </div>
-                    <div id="cabinet-card" class="service-card" style="background-image: url('images/Cabinet.png')">
-                        <h3>Cabinet Refinishing</h3>
-                        <div class="service-pricing">
-                            <div class="price-highlight">Custom Quote</div>
-                        </div>
-                        <p>Transform your kitchen and bathroom cabinets with our expert refinishing services. Cost-effective alternative to replacement.</p>
+                    <ul class="service-list">
+                        <li>Interior/exterior painting</li>
+                        <li>Cabinet refinishing</li>
+                        <li>Drywall textures</li>
+                        <li>Popcorn ceiling removal</li>
+                        <li>Garage epoxy floors</li>
+                    </ul>
+                </div>
+                <div class="service-card" id="carpentry-card">
+                    <h3 class="service-title">Carpentry & Trim</h3>
+                    <div class="card-image">
+                        <img src="images/TurtleBluePaintbrush.png" alt="Carpentry & Trim">
                     </div>
-                    <div id="driveway-card" class="service-card" style="background-image: url('images/Driveway.png')">
-                        <h3>Driveway Seal Coating</h3>
-                        <div class="service-pricing">
-                            <div class="price-highlight">Custom Quote</div>
-                        </div>
-                        <p>Protect and enhance your asphalt surfaces with professional seal coating that extends lifespan and improves appearance.</p>
+                    <ul class="service-list">
+                        <li>Trim & baseboards</li>
+                        <li>Crown molding</li>
+                        <li>Door replacement</li>
+                        <li>Cabinet installs</li>
+                        <li>Wood rot repair</li>
+                    </ul>
+                </div>
+                <div class="service-card" id="surfaces-card">
+                    <h3 class="service-title">Flooring & Surfaces</h3>
+                    <div class="card-image">
+                        <img src="images/TurtlePurplePaintChipper.png" alt="Flooring & Surfaces">
                     </div>
-                    <!-- <div id="pressure-card" class="service-card coming-soon" style="background-image: url('images/PressureWasher.png')">
-                        <h3>Pressure Washing</h3>
-                        <div class="service-pricing">
-                            <div class="price-highlight">Coming Soon</div>
-                        </div>
-                        <p>Professional pressure washing services for buildings, driveways, and commercial properties.</p>
-                        <span class="badge">Coming Soon</span>
+                    <ul class="service-list">
+                        <li>LVP & hardwood</li>
+                        <li>Tile & carpet install</li>
+                        <li>Driveway seal coating</li>
+                        <li>Concrete patching</li>
+                        <li>Backsplash installs</li>
+                    </ul>
+                </div>
+                <div class="service-card" id="exterior-card">
+                    <h3 class="service-title">Exterior & Repairs</h3>
+                    <div class="card-image">
+                        <img src="images/TurtleRedPressureWasher.png" alt="Exterior & Repairs">
                     </div>
-                    <div id="court-card" class="service-card coming-soon" style="background-image: url('images/Tennis.png')">
-                        <h3>Court Resurfacing</h3>
-                        <div class="service-pricing">
-                            <div class="price-highlight">Coming Soon</div>
-                        </div>
-                        <p>Pickleball and tennis court resurfacing with professional-grade materials and techniques.</p>
-                        <span class="badge">Coming Soon</span>
-                    </div> -->
+                    <ul class="service-list">
+                        <li>Pressure washing</li>
+                        <li>Siding repair & install</li>
+                        <li>Window replacement</li>
+                        <li>Roofing repairs</li>
+                        <li>Drywall repair</li>
+                    </ul>
                 </div>
             </div>
         </section>
 
-        <section id="pricing" class="pricing">
+        <section id="gallery" class="gallery">
             <div class="container">
-                <h2 class="section-title">Detailed Pricing</h2>
-                <div class="pricing-tabs">
-                    <button class="tab-btn active" data-tab="painting">Interior Painting</button>
-                    <button class="tab-btn" data-tab="cabinet">Cabinet Refinishing</button>
-                    <button class="tab-btn" data-tab="driveway">Driveway Coating</button>
-                </div>
-                <div class="tab-content">
-                    <div id="painting-tab" class="tab-panel active">
-                        <div class="pricing-grid">
-                            <div class="pricing-card">
-                                <h3>Room Pricing</h3>
-                                <div class="price-list">
-                                    <div class="price-item">
-                                        <span>Small Bedroom (12×12)</span>
-                                        <span class="price">$350</span>
-                                    </div>
-                                    <div class="price-item">
-                                        <span>Large Bedroom (12×18)</span>
-                                        <span class="price">$550</span>
-                                    </div>
-                                    <div class="price-item">
-                                        <span>Kitchen</span>
-                                        <span class="price">$450</span>
-                                    </div>
-                                    <div class="price-item">
-                                        <span>Bathroom</span>
-                                        <span class="price">$250</span>
-                                    </div>
-                                    <div class="price-item">
-                                        <span>Closet</span>
-                                        <span class="price">$75</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="pricing-card">
-                                <h3>What's Included</h3>
-                                <p>Ceiling, walls, and baseboard/trim. You provide paint, or we can purchase it and add the cost.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="cabinet-tab" class="tab-panel">
-                        <div class="pricing-card">
-                            <h3>Cabinet Refinishing</h3>
-                            <p>Custom pricing based on cabinet size, material, and finish. Contact us for a detailed quote.</p>
-                        </div>
-                    </div>
-                    <div id="driveway-tab" class="tab-panel">
-                        <div class="pricing-card">
-                            <h3>Driveway Seal Coating</h3>
-                            <p>Pricing varies by driveway size and condition. Contact us for a free estimate.</p>
-                        </div>
-                    </div>
+                <h2 class="section-title">Our Work</h2>
+                <p class="gallery-subtitle">See the quality and craftsmanship that sets us apart</p>
+            </div>
+            <div class="carousel-container" id="gallery-carousel">
+                <div class="carousel-track"></div>
+                <div class="carousel-controls">
+                    <button class="carousel-btn prev" aria-label="Previous image">‹</button>
+                    <div class="carousel-indicators"></div>
+                    <button class="carousel-btn next" aria-label="Next image">›</button>
                 </div>
             </div>
         </section>
@@ -145,23 +121,10 @@
             <div class="container">
                 <div class="about-content">
                     <div class="about-text">
-                        <h2 class="section-title">Professional Surface Solutions</h2>
-                        <p>Shell Shock Surface Co. specializes in high-quality surface treatments for commercial and residential clients. Based in Ashville, Alabama, we travel up to an hour for the right projects.</p>
-                        <p>We focus primarily on serving businesses and commercial properties, though we're always open to unique projects and specialized work.</p>
-                        <div class="features">
-                            <div class="feature">
-                                <span class="feature-icon">✓</span>
-                                <span>Commercial Focus</span>
-                            </div>
-                            <div class="feature">
-                                <span class="feature-icon">✓</span>
-                                <span>Quality Materials</span>
-                            </div>
-                            <div class="feature">
-                                <span class="feature-icon">✓</span>
-                                <span>Expert Craftsmanship</span>
-                            </div>
-                        </div>
+                        <h2 class="section-title">From the shadows to the surface.</h2>
+                        <p>We've seen how stressful it can be to hire a different contractor for every part of a project. It slows things down, causes miscommunication, and turns simple upgrades into a headache.</p>
+                        <p>So we built a skilled, reliable team that handles more under one roof—painting, flooring, drywall, siding, trim, cabinets, tile, windows, doors, pressure washing, and more. When you call Shell Shock, you get one dependable team and one point of contact.</p>
+                        <p>We don't rush anything. We give every project the time it needs to cure, prep properly, and finish right. Based in Ashville, Alabama, serving homeowners within an hour radius.</p>
                     </div>
                 </div>
             </div>
@@ -169,26 +132,11 @@
 
         <section id="contact" class="contact">
             <div class="container">
-                <h2 class="section-title">Get Your Quote Today</h2>
+                <h2 class="section-title">Ready to transform your space?</h2>
                 <div class="contact-content">
-                    <div class="contact-info">
-                        <h3>Ready to transform your space?</h3>
-                        <p>Contact us for a professional consultation and detailed quote for your project.</p>
-                        <div class="contact-details">
-                            <div class="contact-item">
-                                <!-- <span class="contact-icon">📞</span> -->
-                                <a href="tel:205-505-3011" class="contact-link">205-505-3011</a>
-                            </div>
-                            <div class="contact-item">
-                                <!-- <span class="contact-icon">📍</span> -->
-                                <span>Ashville, Alabama + 1 hour radius</span>
-                            </div>
-                            <div class="contact-item">
-                                <!-- <span class="contact-icon">🏢</span> -->
-                                <span>Commercial & Residential Projects</span>
-                            </div>
-                        </div>
-                    </div>
+                    <p class="contact-description">Contact us for a professional consultation and detailed quote. No job is too big or too small.</p>
+                    <a href="tel:205-505-3011" class="contact-phone">205-505-3011</a>
+                    <p class="contact-location">Ashville, Alabama + 1 hour radius</p>
                 </div>
             </div>
         </section>
@@ -212,20 +160,149 @@
             });
         });
 
-        // Pricing tabs functionality
-        document.querySelectorAll('.tab-btn').forEach(btn => {
-            btn.addEventListener('click', function() {
-                const tabId = this.dataset.tab;
+        // Carousel functionality for both hero and gallery
+        function initCarousel(container) {
+            let currentSlide = 0;
+            let autoSlideInterval;
+            let userTookOver = false;
+            const slides = container.querySelectorAll('.carousel-slide');
+            const indicators = container.querySelectorAll('.indicator');
+            const prevBtn = container.querySelector('.carousel-btn.prev');
+            const nextBtn = container.querySelector('.carousel-btn.next');
+            const modal = document.getElementById('imageModal');
+            
+            function showSlide(index) {
+                slides.forEach(slide => slide.classList.remove('active'));
+                indicators.forEach(indicator => indicator.classList.remove('active'));
                 
-                // Remove active class from all tabs and panels
-                document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-                document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
-                
-                // Add active class to clicked tab and corresponding panel
-                this.classList.add('active');
-                document.getElementById(tabId + '-tab').classList.add('active');
+                slides[index].classList.add('active');
+                indicators[index].classList.add('active');
+                currentSlide = index;
+            }
+            
+            function nextSlide() {
+                currentSlide = (currentSlide + 1) % slides.length;
+                showSlide(currentSlide);
+            }
+            
+            function startAutoSlide() {
+                if (!userTookOver) {
+                    autoSlideInterval = setInterval(nextSlide, 4000);
+                }
+            }
+            
+            function stopAutoSlide() {
+                clearInterval(autoSlideInterval);
+            }
+            
+            // Auto-start carousel
+            startAutoSlide();
+            
+            // Navigation controls
+            if (prevBtn) {
+                prevBtn.addEventListener('click', () => {
+                    userTookOver = true;
+                    stopAutoSlide();
+                    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+                    showSlide(currentSlide);
+                });
+            }
+            
+            if (nextBtn) {
+                nextBtn.addEventListener('click', () => {
+                    userTookOver = true;
+                    stopAutoSlide();
+                    nextSlide();
+                });
+            }
+            
+            // Indicator controls
+            indicators.forEach((indicator, index) => {
+                indicator.addEventListener('click', () => {
+                    userTookOver = true;
+                    stopAutoSlide();
+                    showSlide(index);
+                });
             });
+            
+            // Modal functionality (only for gallery)
+            if (modal && container.closest('#gallery')) {
+                slides.forEach((slide, index) => {
+                    slide.addEventListener('click', () => {
+                        userTookOver = true;
+                        stopAutoSlide();
+                        const img = slide.querySelector('img');
+                        const overlay = slide.querySelector('.slide-overlay');
+                        
+                        document.querySelector('.modal-image').src = img.src;
+                        document.querySelector('.modal-image').alt = img.alt;
+                        if (overlay) {
+                            document.querySelector('.modal-title').textContent = overlay.querySelector('h3').textContent;
+                            document.querySelector('.modal-description').textContent = overlay.querySelector('p').textContent;
+                        }
+                        
+                        modal.style.display = 'block';
+                    });
+                });
+            }
+            
+            // Pause on hover (but don't mark as user takeover)
+            container.addEventListener('mouseenter', stopAutoSlide);
+            container.addEventListener('mouseleave', () => {
+                if (!userTookOver) startAutoSlide();
+            });
+            
+            return { stopAutoSlide, startAutoSlide, userTookOver: () => userTookOver };
+        }
+        
+        // Generate carousel images dynamically
+        const galleryImages = Array.from({length: 16}, (_, i) => `1stClient${i}.jpg`).sort();
+        
+        function generateCarousel(container, images) {
+            const track = container.querySelector('.carousel-track');
+            const indicators = container.querySelector('.carousel-indicators');
+            
+            // Generate slides
+            images.forEach((img, i) => {
+                const slide = document.createElement('div');
+                slide.className = `carousel-slide${i === 0 ? ' active' : ''}`;
+                slide.innerHTML = `<img src="images/gallery/${img}" alt="Professional Work ${i + 1}" loading="lazy">`;
+                track.appendChild(slide);
+                
+                // Generate indicator
+                const indicator = document.createElement('button');
+                indicator.className = `indicator${i === 0 ? ' active' : ''}`;
+                indicator.setAttribute('data-slide', i);
+                indicators.appendChild(indicator);
+            });
+        }
+        
+        // Generate gallery carousel
+        const galleryCarousel = document.getElementById('gallery-carousel');
+        if (galleryCarousel) {
+            generateCarousel(galleryCarousel, galleryImages);
+        }
+        
+        // Initialize all carousels
+        const carousels = document.querySelectorAll('.carousel-container');
+        const carouselInstances = [];
+        carousels.forEach(carousel => {
+            carouselInstances.push(initCarousel(carousel));
         });
+        
+        // Modal close functionality
+        const modal = document.getElementById('imageModal');
+        if (modal) {
+            document.querySelector('.modal-close').addEventListener('click', () => {
+                modal.style.display = 'none';
+            });
+            
+            modal.addEventListener('click', (e) => {
+                if (e.target === modal) {
+                    modal.style.display = 'none';
+                }
+            });
+        }
     </script>
 </body>
 </html>
