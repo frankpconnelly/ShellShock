@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Shell Shock Surface Co.</title>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="about-page">
+  <header class="header">
+    <nav class="nav">
+      <a href="index.html" class="nav-brand">
+        <img src="images/logoNoBg.png" alt="Shell Shock Logo" class="logo-img">
+        <h1 class="logo">
+          <span class="logo-line1">SHELL SHOCK</span>
+          <span class="logo-line2">SURFACE CO.</span>
+        </h1>
+      </a>
+      <div class="nav-menu">
+        <button class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="nav-links" id="navLinks">
+          <a href="index.html#services" class="nav-link">Services</a>
+          <a href="index.html#gallery" class="nav-link">Gallery</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="index.html#contact" class="nav-link">Contact</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="about">
+      <div class="container">
+        <div class="about-content">
+          <div class="about-text">
+            <h2 class="about-title">From the shadows to the surface.</h2>
+            <p>We've seen how stressful it can be to hire a different contractor for every part of a project. It slows things down, causes miscommunication, and turns simple upgrades into a headache.</p>
+            <p>So we built a skilled, reliable team that handles more under one roof: painting, flooring, drywall, siding, trim, cabinets, tile, windows, doors, pressure washing, and more. When you call Shell Shock, you get one dependable team and one point of contact.</p>
+            <p>We don't rush anything. We give every project the time it needs to cure, prep properly, and finish right. Based in Ashville, Alabama, serving homeowners within an hour radius.</p>
+          </div>
+        </div>
+      </div>
+      <div class="hero-social">
+        <a href="https://www.facebook.com/Shellshocksurfaceco" class="social-link" title="Facebook" aria-label="Facebook"><i class='bx bxl-facebook'></i></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Shell Shock Surface Co. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Hamburger menu functionality
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
+    
+    if (hamburger && navLinks) {
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+        
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!hamburger.contains(e.target) && !navLinks.contains(e.target)) {
+                navLinks.classList.remove('active');
+            }
+        });
+    }
+  </script>
+</body>
+</html>

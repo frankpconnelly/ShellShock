@@ -1,0 +1,102 @@
+/* Button Shell Animations */
+.btn-particle {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  opacity: 0;
+  pointer-events: none;
+  background: url('../images/shell.svg') no-repeat center;
+  background-size: contain;
+  left: 50%;
+  top: 50%;
+  margin-left: -15px;
+  margin-top: -15px;
+  visibility: hidden;
+}
+
+.btn-primary:hover .btn-particle { 
+  opacity: 0;
+  visibility: visible;
+}
+
+.btn-primary:hover .btn-particle:nth-child(1) { animation: orbit-1 1.5s 0s ease-out forwards; }
+.btn-primary:hover .btn-particle:nth-child(2) { animation: orbit-2 1.5s 0.05s ease-out forwards; }
+.btn-primary:hover .btn-particle:nth-child(3) { animation: orbit-3 1.5s 0.1s ease-out forwards; }
+.btn-primary:hover .btn-particle:nth-child(4) { animation: orbit-4 1.5s 0.15s ease-out forwards; }
+.btn-primary:hover .btn-particle:nth-child(5) { animation: orbit-5 1.5s 0.2s ease-out forwards; }
+.btn-primary:hover .btn-particle:nth-child(6) { animation: orbit-6 1.5s 0.25s ease-out forwards; }
+.btn-primary:hover .btn-particle:nth-child(7) { animation: orbit-7 1.5s 0.3s ease-out forwards; }
+.btn-primary:hover .btn-particle:nth-child(8) { animation: orbit-8 1.5s 0.35s ease-out forwards; }
+.btn-primary:hover .btn-particle:nth-child(9) { animation: orbit-9 1.5s 0.4s ease-out forwards; }
+.btn-primary:hover .btn-particle:nth-child(10) { animation: orbit-10 1.5s 0.45s ease-out forwards; }
+.btn-primary:hover .btn-particle:nth-child(11) { animation: orbit-11 1.5s 0.5s ease-out forwards; }
+.btn-primary:hover .btn-particle:nth-child(12) { animation: orbit-12 1.5s 0.55s ease-out forwards; }
+.btn-primary:hover .btn-particle:nth-child(13) { animation: orbit-13 1.5s 0.6s ease-out forwards; }
+.btn-primary:hover .btn-particle:nth-child(14) { animation: orbit-14 1.5s 0.65s ease-out forwards; }
+.btn-primary:hover .btn-particle:nth-child(15) { animation: orbit-15 1.5s 0.7s ease-out forwards; }
+.btn-primary:hover .btn-particle:nth-child(16) { animation: orbit-16 1.5s 0.75s ease-out forwards; }
+.btn-primary:hover .btn-particle:nth-child(17) { animation: orbit-17 1.5s 0.8s ease-out forwards; }
+.btn-primary:hover .btn-particle:nth-child(18) { animation: orbit-18 1.5s 0.85s ease-out forwards; }
+.btn-primary:hover .btn-particle:nth-child(19) { animation: orbit-19 1.5s 0.9s ease-out forwards; }
+.btn-primary:hover .btn-particle:nth-child(20) { animation: orbit-20 1.5s 0.95s ease-out forwards; }
+.btn-primary:hover .btn-particle:nth-child(21) { animation: orbit-21 1.5s 0.02s ease-out forwards; }
+.btn-primary:hover .btn-particle:nth-child(22) { animation: orbit-22 1.5s 0.07s ease-out forwards; }
+.btn-primary:hover .btn-particle:nth-child(23) { animation: orbit-23 1.5s 0.12s ease-out forwards; }
+.btn-primary:hover .btn-particle:nth-child(24) { animation: orbit-24 1.5s 0.17s ease-out forwards; }
+.btn-primary:hover .btn-particle:nth-child(25) { animation: orbit-25 1.5s 0.22s ease-out forwards; }
+.btn-primary:hover .btn-particle:nth-child(26) { animation: orbit-26 1.5s 0.27s ease-out forwards; }
+.btn-primary:hover .btn-particle:nth-child(27) { animation: orbit-27 1.5s 0.32s ease-out forwards; }
+.btn-primary:hover .btn-particle:nth-child(28) { animation: orbit-28 1.5s 0.37s ease-out forwards; }
+.btn-primary:hover .btn-particle:nth-child(29) { animation: orbit-29 1.5s 0.42s ease-out forwards; }
+.btn-primary:hover .btn-particle:nth-child(30) { animation: orbit-30 1.5s 0.47s ease-out forwards; }
+.btn-primary:hover .btn-particle:nth-child(31) { animation: orbit-31 1.5s 0.52s ease-out forwards; }
+.btn-primary:hover .btn-particle:nth-child(32) { animation: orbit-32 1.5s 0.57s ease-out forwards; }
+.btn-primary:hover .btn-particle:nth-child(33) { animation: orbit-33 1.5s 0.62s ease-out forwards; }
+.btn-primary:hover .btn-particle:nth-child(34) { animation: orbit-34 1.5s 0.67s ease-out forwards; }
+.btn-primary:hover .btn-particle:nth-child(35) { animation: orbit-35 1.5s 0.72s ease-out forwards; }
+.btn-primary:hover .btn-particle:nth-child(36) { animation: orbit-36 1.5s 0.77s ease-out forwards; }
+.btn-primary:hover .btn-particle:nth-child(37) { animation: orbit-37 1.5s 0.82s ease-out forwards; }
+.btn-primary:hover .btn-particle:nth-child(38) { animation: orbit-38 1.5s 0.87s ease-out forwards; }
+.btn-primary:hover .btn-particle:nth-child(39) { animation: orbit-39 1.5s 0.92s ease-out forwards; }
+.btn-primary:hover .btn-particle:nth-child(40) { animation: orbit-40 1.5s 0.97s ease-out forwards; }
+
+@keyframes orbit-1 { from { opacity: 0.95; transform: translate(0, 0) rotate(0deg) scale(1); } to { transform: translate(-110px, 90px) rotate(180deg) scale(2); opacity: 0; } }
+@keyframes orbit-2 { from { opacity: 0.95; transform: translate(0, 0) rotate(0deg) scale(1); } to { transform: translate(110px, 90px) rotate(180deg) scale(2); opacity: 0; } }
+@keyframes orbit-3 { from { opacity: 0.95; transform: translate(0, 0) rotate(0deg) scale(1); } to { transform: translate(-150px, -75px) rotate(180deg) scale(2); opacity: 0; } }
+@keyframes orbit-4 { from { opacity: 0.95; transform: translate(0, 0) rotate(0deg) scale(1); } to { transform: translate(150px, -75px) rotate(180deg) scale(2); opacity: 0; } }
+@keyframes orbit-5 { from { opacity: 0.95; transform: translate(0, 0) rotate(0deg) scale(1); } to { transform: translate(0px, 120px) rotate(180deg) scale(2); opacity: 0; } }
+@keyframes orbit-6 { from { opacity: 0.95; transform: translate(0, 0) rotate(0deg) scale(1); } to { transform: translate(0px, -120px) rotate(180deg) scale(2); opacity: 0; } }
+@keyframes orbit-7 { from { opacity: 0.95; transform: translate(0, 0) rotate(0deg) scale(1); } to { transform: translate(-180px, 0px) rotate(180deg) scale(2); opacity: 0; } }
+@keyframes orbit-8 { from { opacity: 0.95; transform: translate(0, 0) rotate(0deg) scale(1); } to { transform: translate(180px, 0px) rotate(180deg) scale(2); opacity: 0; } }
+@keyframes orbit-9 { from { opacity: 0.95; transform: translate(0, 0) rotate(0deg) scale(1); } to { transform: translate(-130px, 60px) rotate(180deg) scale(2); opacity: 0; } }
+@keyframes orbit-10 { from { opacity: 0.95; transform: translate(0, 0) rotate(0deg) scale(1); } to { transform: translate(130px, 60px) rotate(180deg) scale(2); opacity: 0; } }
+@keyframes orbit-11 { from { opacity: 0.95; transform: translate(0, 0) rotate(0deg) scale(1); } to { transform: translate(-85px, 105px) rotate(180deg) scale(2); opacity: 0; } }
+@keyframes orbit-12 { from { opacity: 0.95; transform: translate(0, 0) rotate(0deg) scale(1); } to { transform: translate(85px, 105px) rotate(180deg) scale(2); opacity: 0; } }
+@keyframes orbit-13 { from { opacity: 0.95; transform: translate(0, 0) rotate(0deg) scale(1); } to { transform: translate(-165px, -45px) rotate(180deg) scale(2); opacity: 0; } }
+@keyframes orbit-14 { from { opacity: 0.95; transform: translate(0, 0) rotate(0deg) scale(1); } to { transform: translate(165px, -45px) rotate(180deg) scale(2); opacity: 0; } }
+@keyframes orbit-15 { from { opacity: 0.95; transform: translate(0, 0) rotate(0deg) scale(1); } to { transform: translate(-65px, 114px) rotate(180deg) scale(2); opacity: 0; } }
+@keyframes orbit-16 { from { opacity: 0.95; transform: translate(0, 0) rotate(0deg) scale(1); } to { transform: translate(65px, 114px) rotate(180deg) scale(2); opacity: 0; } }
+@keyframes orbit-17 { from { opacity: 0.95; transform: translate(0, 0) rotate(0deg) scale(1); } to { transform: translate(-160px, -60px) rotate(180deg) scale(2); opacity: 0; } }
+@keyframes orbit-18 { from { opacity: 0.95; transform: translate(0, 0) rotate(0deg) scale(1); } to { transform: translate(160px, -60px) rotate(180deg) scale(2); opacity: 0; } }
+@keyframes orbit-19 { from { opacity: 0.95; transform: translate(0, 0) rotate(0deg) scale(1); } to { transform: translate(-120px, 84px) rotate(180deg) scale(2); opacity: 0; } }
+@keyframes orbit-20 { from { opacity: 0.95; transform: translate(0, 0) rotate(0deg) scale(1); } to { transform: translate(120px, 84px) rotate(180deg) scale(2); opacity: 0; } }
+@keyframes orbit-21 { from { opacity: 0.95; transform: translate(0, 0) rotate(0deg) scale(1); } to { transform: translate(-140px, -84px) rotate(180deg) scale(2); opacity: 0; } }
+@keyframes orbit-22 { from { opacity: 0.95; transform: translate(0, 0) rotate(0deg) scale(1); } to { transform: translate(140px, -84px) rotate(180deg) scale(2); opacity: 0; } }
+@keyframes orbit-23 { from { opacity: 0.95; transform: translate(0, 0) rotate(0deg) scale(1); } to { transform: translate(-45px, 126px) rotate(180deg) scale(2); opacity: 0; } }
+@keyframes orbit-24 { from { opacity: 0.95; transform: translate(0, 0) rotate(0deg) scale(1); } to { transform: translate(45px, 126px) rotate(180deg) scale(2); opacity: 0; } }
+@keyframes orbit-25 { from { opacity: 0.95; transform: translate(0, 0) rotate(0deg) scale(1); } to { transform: translate(-175px, -30px) rotate(180deg) scale(2); opacity: 0; } }
+@keyframes orbit-26 { from { opacity: 0.95; transform: translate(0, 0) rotate(0deg) scale(1); } to { transform: translate(175px, -30px) rotate(180deg) scale(2); opacity: 0; } }
+@keyframes orbit-27 { from { opacity: 0.95; transform: translate(0, 0) rotate(0deg) scale(1); } to { transform: translate(-95px, 96px) rotate(180deg) scale(2); opacity: 0; } }
+@keyframes orbit-28 { from { opacity: 0.95; transform: translate(0, 0) rotate(0deg) scale(1); } to { transform: translate(95px, 96px) rotate(180deg) scale(2); opacity: 0; } }
+@keyframes orbit-29 { from { opacity: 0.95; transform: translate(0, 0) rotate(0deg) scale(1); } to { transform: translate(-155px, -54px) rotate(180deg) scale(2); opacity: 0; } }
+@keyframes orbit-30 { from { opacity: 0.95; transform: translate(0, 0) rotate(0deg) scale(1); } to { transform: translate(155px, -54px) rotate(180deg) scale(2); opacity: 0; } }
+@keyframes orbit-31 { from { opacity: 0.95; transform: translate(0, 0) rotate(0deg) scale(1); } to { transform: translate(-75px, 108px) rotate(180deg) scale(2); opacity: 0; } }
+@keyframes orbit-32 { from { opacity: 0.95; transform: translate(0, 0) rotate(0deg) scale(1); } to { transform: translate(75px, 108px) rotate(180deg) scale(2); opacity: 0; } }
+@keyframes orbit-33 { from { opacity: 0.95; transform: translate(0, 0) rotate(0deg) scale(1); } to { transform: translate(-185px, -15px) rotate(180deg) scale(2); opacity: 0; } }
+@keyframes orbit-34 { from { opacity: 0.95; transform: translate(0, 0) rotate(0deg) scale(1); } to { transform: translate(185px, -15px) rotate(180deg) scale(2); opacity: 0; } }
+@keyframes orbit-35 { from { opacity: 0.95; transform: translate(0, 0) rotate(0deg) scale(1); } to { transform: translate(-25px, 132px) rotate(180deg) scale(2); opacity: 0; } }
+@keyframes orbit-36 { from { opacity: 0.95; transform: translate(0, 0) rotate(0deg) scale(1); } to { transform: translate(25px, 132px) rotate(180deg) scale(2); opacity: 0; } }
+@keyframes orbit-37 { from { opacity: 0.95; transform: translate(0, 0) rotate(0deg) scale(1); } to { transform: translate(-115px, 78px) rotate(180deg) scale(2); opacity: 0; } }
+@keyframes orbit-38 { from { opacity: 0.95; transform: translate(0, 0) rotate(0deg) scale(1); } to { transform: translate(115px, 78px) rotate(180deg) scale(2); opacity: 0; } }
+@keyframes orbit-39 { from { opacity: 0.95; transform: translate(0, 0) rotate(0deg) scale(1); } to { transform: translate(-145px, -66px) rotate(180deg) scale(2); opacity: 0; } }
+@keyframes orbit-40 { from { opacity: 0.95; transform: translate(0, 0) rotate(0deg) scale(1); } to { transform: translate(145px, -66px) rotate(180deg) scale(2); opacity: 0; } }
