@@ -649,7 +649,7 @@ body.about-page::before {
 }
 
 .service-card.flipped:hover .service-card-inner {
-  transform: rotateY(180deg) scale(1.01);
+  transform: rotateY(180deg);
 }
 
 .service-card:hover .service-card-front::after {
