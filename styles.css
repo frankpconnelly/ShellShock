@@ -1475,3 +1475,26 @@ body.about-page::before {
     padding-top: calc(6rem + 3vw) !important;
   }
 }
+
+
+/* Remove accessibility highlights on mobile */
+@media (max-width: 768px) {
+    * {
+        -webkit-tap-highlight-color: transparent;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        user-select: none;
+    }
+    
+    *:focus {
+        outline: none !important;
+    }
+    
+    button:focus,
+    a:focus,
+    input:focus,
+    textarea:focus {
+        outline: none !important;
+        box-shadow: none !important;
+    }
+}
