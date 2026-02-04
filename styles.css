@@ -100,7 +100,7 @@ body::before {
   transform: translate(-50%, -50%);
   width: clamp(150vw, 200vw, 300vw);
   height: clamp(150vh, 200vh, 300vh);
-  background: url('images/logoNoBg.png') no-repeat center;
+  background: url('images/logoNoBG.webp') no-repeat center;
   background-size: contain;
   opacity: 0.3;
   pointer-events: none;
@@ -113,7 +113,7 @@ body.about-page::before {
   transform: none;
   width: 100%;
   height: 100%;
-  background: url('images/GreenStarryNightCenter.png') no-repeat bottom;
+  background: url('images/GreenStarryNightCenter.webp') no-repeat bottom;
   background-size: clamp(100%, 120%, 150%);
   opacity: 0.2;
 }
@@ -292,7 +292,7 @@ body.about-page::before {
   content: '';
   position: absolute;
   inset: 0;
-  background: url('images/GreenStarryNightSky.png') no-repeat center 50%;
+  background: url('images/GreenStarryNightSky.webp') no-repeat center 50%;
   background-size: clamp(150%, 200%, 300%);
   opacity: 0.3;
   pointer-events: none;
@@ -794,7 +794,7 @@ body.about-page::before {
   content: '';
   position: absolute;
   inset: 0;
-  background: url('images/GreenStarryNightSky.png') no-repeat center;
+  background: url('images/GreenStarryNightSky.webp') no-repeat center;
   background-size: clamp(150%, 200%, 300%);
   opacity: 0.3;
   pointer-events: none;
