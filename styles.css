@@ -466,6 +466,7 @@ body.about-page::before {
   cursor: pointer;
   container-type: inline-size;
   perspective: 1000px;
+  overflow: hidden;
 }
 
 .service-card:hover {
@@ -644,11 +645,11 @@ body.about-page::before {
 }
 
 .service-card:hover:not(.flipped) .service-card-inner {
-  transform: scale(1.05);
+  transform: scale(1.01);
 }
 
 .service-card.flipped:hover .service-card-inner {
-  transform: rotateY(180deg) scale(1.05);
+  transform: rotateY(180deg) scale(1.01);
 }
 
 .service-card:hover .service-card-front::after {
@@ -668,7 +669,8 @@ body.about-page::before {
   z-index: 3;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
   border-radius: 13px 13px 0 0;
-  overflow: hidden;
+  overflow: visible;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.6));
 }
 
 #painting-card .service-title {
@@ -693,10 +695,34 @@ body.about-page::before {
   overflow: hidden;
   background: rgba(0, 0, 0, 0.3);
   position: relative;
-  z-index: 3;
+  z-index: 2;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   margin: 0 3px;
+}
+
+.card-image::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 30%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), transparent);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.card-image::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 30%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.4), transparent);
+  z-index: 1;
+  pointer-events: none;
 }
 
 .card-image img {
@@ -719,6 +745,7 @@ body.about-page::before {
   flex: 1;
   border-radius: 0 0 13px 13px;
   overflow: hidden;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.5);
 }
 
 .service-list li {
