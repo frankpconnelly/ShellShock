@@ -7,6 +7,7 @@
     <meta name="description" content="One-stop home improvement team in Ashville, AL. Painting, flooring, drywall, siding, cabinets, tile, and 20+ more services. One crew, one schedule, less hassle.">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="carousel.css">
     <link rel="stylesheet" href="button-particles.css">
 </head>
 <body>
@@ -175,97 +176,34 @@
         <section id="gallery" class="gallery">
             <div class="container">
                 <h2 class="section-title">Our Work</h2>
-                <div class="carousel-container">
-                    <div class="carousel-main">
-                        <input type="radio" name="slides" checked="checked" id="slide-1">
-                        <input type="radio" name="slides" id="slide-2">
-                        <input type="radio" name="slides" id="slide-3">
-                        <input type="radio" name="slides" id="slide-4">
-                        <input type="radio" name="slides" id="slide-5">
-                        <input type="radio" name="slides" id="slide-6">
-                        <input type="radio" name="slides" id="slide-7">
-                        <input type="radio" name="slides" id="slide-8">
-                        <input type="radio" name="slides" id="slide-9">
-                        <input type="radio" name="slides" id="slide-10">
-                        <input type="radio" name="slides" id="slide-11">
-                        <input type="radio" name="slides" id="slide-12">
-                        <input type="radio" name="slides" id="slide-13">
-                        <input type="radio" name="slides" id="slide-14">
-                        <input type="radio" name="slides" id="slide-15">
-                        <input type="radio" name="slides" id="slide-16">
-                        
-                        <ul class="carousel__thumbnails">
-                            <li><label for="slide-1"><img src="images/gallery/1stClient0.jpg" alt=""></label></li>
-                            <li><label for="slide-2"><img src="images/gallery/1stClient1.jpg" alt=""></label></li>
-                            <li><label for="slide-3"><img src="images/gallery/1stClient2.jpg" alt=""></label></li>
-                            <li><label for="slide-4"><img src="images/gallery/1stClient3.jpg" alt=""></label></li>
-                            <li><label for="slide-5"><img src="images/gallery/1stClient4.jpg" alt=""></label></li>
-                            <li><label for="slide-6"><img src="images/gallery/1stClient5.jpg" alt=""></label></li>
-                            <li><label for="slide-7"><img src="images/gallery/1stClient6.jpg" alt=""></label></li>
-                            <li><label for="slide-8"><img src="images/gallery/1stClient7.jpg" alt=""></label></li>
-                            <li><label for="slide-9"><img src="images/gallery/1stClient8.jpg" alt=""></label></li>
-                            <li><label for="slide-10"><img src="images/gallery/1stClient9.jpg" alt=""></label></li>
-                            <li><label for="slide-11"><img src="images/gallery/1stClient10.jpg" alt=""></label></li>
-                            <li><label for="slide-12"><img src="images/gallery/1stClient11.jpg" alt=""></label></li>
-                            <li><label for="slide-13"><img src="images/gallery/1stClient12.jpg" alt=""></label></li>
-                            <li><label for="slide-14"><img src="images/gallery/1stClient13.jpg" alt=""></label></li>
-                            <li><label for="slide-15"><img src="images/gallery/1stClient14.jpg" alt=""></label></li>
-                            <li><label for="slide-16"><img src="images/gallery/1stClient15.jpg" alt=""></label></li>
-                        </ul>
-                        
-                        <div class="carousel-preview">
-                            <ul class="carousel__slides">
-                                <li class="carousel__slide">
-                                    <img src="images/gallery/1stClient0.jpg" alt="Professional Work 1">
-                                </li>
-                                <li class="carousel__slide">
-                                    <img src="images/gallery/1stClient1.jpg" alt="Professional Work 2">
-                                </li>
-                                <li class="carousel__slide">
-                                    <img src="images/gallery/1stClient2.jpg" alt="Professional Work 3">
-                                </li>
-                                <li class="carousel__slide">
-                                    <img src="images/gallery/1stClient3.jpg" alt="Professional Work 4">
-                                </li>
-                                <li class="carousel__slide">
-                                    <img src="images/gallery/1stClient4.jpg" alt="Professional Work 5">
-                                </li>
-                                <li class="carousel__slide">
-                                    <img src="images/gallery/1stClient5.jpg" alt="Professional Work 6">
-                                </li>
-                                <li class="carousel__slide">
-                                    <img src="images/gallery/1stClient6.jpg" alt="Professional Work 7">
-                                </li>
-                                <li class="carousel__slide">
-                                    <img src="images/gallery/1stClient7.jpg" alt="Professional Work 8">
-                                </li>
-                                <li class="carousel__slide">
-                                    <img src="images/gallery/1stClient8.jpg" alt="Professional Work 9">
-                                </li>
-                                <li class="carousel__slide">
-                                    <img src="images/gallery/1stClient9.jpg" alt="Professional Work 10">
-                                </li>
-                                <li class="carousel__slide">
-                                    <img src="images/gallery/1stClient10.jpg" alt="Professional Work 11">
-                                </li>
-                                <li class="carousel__slide">
-                                    <img src="images/gallery/1stClient11.jpg" alt="Professional Work 12">
-                                </li>
-                                <li class="carousel__slide">
-                                    <img src="images/gallery/1stClient12.jpg" alt="Professional Work 13">
-                                </li>
-                                <li class="carousel__slide">
-                                    <img src="images/gallery/1stClient13.jpg" alt="Professional Work 14">
-                                </li>
-                                <li class="carousel__slide">
-                                    <img src="images/gallery/1stClient14.jpg" alt="Professional Work 15">
-                                </li>
-                                <li class="carousel__slide">
-                                    <img src="images/gallery/1stClient15.jpg" alt="Professional Work 16">
-                                </li>
-                            </ul>
+                <div class="simple-carousel">
+                    <button class="carousel-btn carousel-prev" onclick="moveSlide(-1)" aria-label="Previous">
+                        <i class='bx bx-chevron-left'></i>
+                    </button>
+                    <div class="carousel-wrapper">
+                        <div class="carousel-track">
+                            <img src="images/gallery/1stClient0.jpg" alt="Work Example 1" class="carousel-img">
+                            <img src="images/gallery/1stClient1.jpg" alt="Work Example 2" class="carousel-img">
+                            <img src="images/gallery/1stClient2.jpg" alt="Work Example 3" class="carousel-img">
+                            <img src="images/gallery/1stClient3.jpg" alt="Work Example 4" class="carousel-img">
+                            <img src="images/gallery/1stClient4.jpg" alt="Work Example 5" class="carousel-img">
+                            <img src="images/gallery/1stClient5.jpg" alt="Work Example 6" class="carousel-img">
+                            <img src="images/gallery/1stClient6.jpg" alt="Work Example 7" class="carousel-img">
+                            <img src="images/gallery/1stClient7.jpg" alt="Work Example 8" class="carousel-img">
+                            <img src="images/gallery/1stClient8.jpg" alt="Work Example 9" class="carousel-img">
+                            <img src="images/gallery/1stClient9.jpg" alt="Work Example 10" class="carousel-img">
+                            <img src="images/gallery/1stClient10.jpg" alt="Work Example 11" class="carousel-img">
+                            <img src="images/gallery/1stClient11.jpg" alt="Work Example 12" class="carousel-img">
+                            <img src="images/gallery/1stClient12.jpg" alt="Work Example 13" class="carousel-img">
+                            <img src="images/gallery/1stClient13.jpg" alt="Work Example 14" class="carousel-img">
+                            <img src="images/gallery/1stClient14.jpg" alt="Work Example 15" class="carousel-img">
+                            <img src="images/gallery/1stClient15.jpg" alt="Work Example 16" class="carousel-img">
                         </div>
                     </div>
+                    <button class="carousel-btn carousel-next" onclick="moveSlide(1)" aria-label="Next">
+                        <i class='bx bx-chevron-right'></i>
+                    </button>
+                    <div class="carousel-dots"></div>
                 </div>
             </div>
         </section>
@@ -295,6 +233,9 @@
     <footer class="footer">
         <div class="container">
             <p>&copy; 2026 Shell Shock Surface Co. All rights reserved.</p>
+            <div class="footer-social">
+                <a href="https://www.facebook.com/Shellshocksurfaceco" title="Facebook" aria-label="Facebook"><i class='bx bxl-facebook'></i></a>
+            </div>
         </div>
     </footer>
 
@@ -317,51 +258,37 @@
             });
         });
 
-        // Carousel navigation
-        let currentSlide = 1;
-        const totalSlides = 16;
+        // Simple carousel
+        let slideIndex = 0;
+        const slides = document.querySelectorAll('.carousel-img');
+        const dotsContainer = document.querySelector('.carousel-dots');
 
-        function updateThumbnailHighlight(shouldScroll = true) {
-            // Remove all active states
-            document.querySelectorAll('.carousel__thumbnails li').forEach(li => {
-                li.classList.remove('active-thumb');
+        if (slides.length > 0 && dotsContainer) {
+            slides.forEach((_, i) => {
+                const dot = document.createElement('span');
+                dot.className = 'dot';
+                dot.onclick = () => showSlide(i);
+                dotsContainer.appendChild(dot);
             });
-            
-            // Add active state to current thumbnail
-            const currentThumb = document.querySelector(`.carousel__thumbnails li:nth-child(${currentSlide})`);
-            if (currentThumb) {
-                currentThumb.classList.add('active-thumb');
-                // Scroll thumbnail into view
-                if (shouldScroll) {
-                    currentThumb.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
-                }
+
+            function showSlide(n) {
+                if (n >= slides.length) slideIndex = 0;
+                else if (n < 0) slideIndex = slides.length - 1;
+                else slideIndex = n;
+                
+                slides.forEach(slide => slide.classList.remove('active'));
+                document.querySelectorAll('.dot').forEach(dot => dot.classList.remove('active'));
+                
+                slides[slideIndex].classList.add('active');
+                document.querySelectorAll('.dot')[slideIndex].classList.add('active');
             }
+
+            window.moveSlide = function(n) {
+                showSlide(slideIndex + n);
+            }
+
+            showSlide(0);
         }
-
-        function nextSlide() {
-            currentSlide = currentSlide >= totalSlides ? 1 : currentSlide + 1;
-            document.getElementById(`slide-${currentSlide}`).checked = true;
-            updateThumbnailHighlight();
-        }
-
-        function prevSlide() {
-            currentSlide = currentSlide <= 1 ? totalSlides : currentSlide - 1;
-            document.getElementById(`slide-${currentSlide}`).checked = true;
-            updateThumbnailHighlight();
-        }
-
-        // Update current slide when thumbnails are clicked
-        document.querySelectorAll('input[name="slides"]').forEach((input, index) => {
-            input.addEventListener('change', () => {
-                if (input.checked) {
-                    currentSlide = index + 1;
-                    updateThumbnailHighlight();
-                }
-            });
-        });
-
-        // Initialize first thumbnail as active
-        updateThumbnailHighlight(false);
 
         // Image Modal functionality
         const modal = document.getElementById('imageModal');
