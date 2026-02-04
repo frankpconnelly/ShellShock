@@ -1457,3 +1457,21 @@ body.about-page::before {
     display: none;
   }
 }
+
+
+/* About Page Mobile Background Fix */
+@media (max-width: 768px) {
+  body.about-page::before {
+    background-size: cover !important;
+    background-position: center center !important;
+    position: fixed !important;
+  }
+}
+
+
+/* About Page Mobile Padding Fix */
+@media (max-width: 768px) {
+  .about {
+    padding-top: calc(6rem + 3vw) !important;
+  }
+}
