@@ -437,7 +437,7 @@ body.about-page::before {
 /* SERVICES SECTION */
 .services {
   padding: calc(var(--spacing-xl) * 1.2) 0 calc(var(--spacing-md) * 1.5) 0;
-  background: var(--bg-secondary);
+  background: transparent;
   box-shadow: 0 var(--spacing-xs) var(--spacing-md) rgba(0, 0, 0, 0.3);
   perspective: 1000px;
 }
@@ -1407,5 +1407,53 @@ body.about-page::before {
   
   .image-modal-next {
     right: 1rem;
+  }
+}
+
+
+/* Mobile Hero Spacing Fix */
+@media (max-width: 768px) {
+  .hero {
+    padding-top: calc(6rem + 3vw) !important;
+  }
+}
+
+
+/* Mobile Social Icon Fix */
+@media (max-width: 768px) {
+  .hero-social {
+    display: none !important;
+  }
+  
+  .footer {
+    padding: 2rem 0;
+  }
+  
+  .footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .footer-social {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .footer-social a {
+    color: var(--brand-cream);
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-social a:hover {
+    color: var(--shell-blue);
+  }
+}
+
+@media (min-width: 769px) {
+  .footer-social {
+    display: none;
   }
 }
