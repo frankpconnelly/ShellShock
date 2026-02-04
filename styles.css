@@ -1498,3 +1498,39 @@ body.about-page::before {
         box-shadow: none !important;
     }
 }
+
+/* Fixed floating Facebook button for mobile */
+.floating-fb {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .floating-fb {
+        display: block;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 30px;
+        height: 30px;
+        filter: drop-shadow(0 8px 24px rgba(0, 0, 0, 0.4)) drop-shadow(0 4px 12px rgba(0, 0, 0, 0.2));
+        z-index: 999;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    .floating-fb img {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .floating-fb:hover,
+    .floating-fb:active,
+    .floating-fb:focus {
+        transform: scale(1.15);
+        filter: drop-shadow(0 12px 32px rgba(0, 0, 0, 0.5)) drop-shadow(0 6px 16px rgba(0, 0, 0, 0.3));
+    }
+    
+    .hero-social,
+    .footer-social {
+        display: none !important;
+    }
+}
